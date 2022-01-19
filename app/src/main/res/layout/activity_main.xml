@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graylight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/graylight"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="@color/graydark"
+                tools:ignore="RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:hint="@string/username"
+                android:inputType="textVisiblePassword"
+                android:minHeight="48dp"
+
+                android:textColorHint="@color/graydark" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:hint="@string/email"
+                android:inputType="textWebEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="@color/graydark" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/graydark" />
+
+            <EditText
+                android:id="@+id/repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Re-type Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/graydark" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/gender"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttom"
+                android:drawingCacheQuality="high"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:backgroundTint="#F85084" />
+
+            <Button
+                android:id="@+id/btnshowinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttom"
+                android:drawingCacheQuality="high"
+                android:text="Show Info"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:backgroundTint="#1261A0" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/minfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullnameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:hint="Full name"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#f85084"
+                android:textColorHint="#f85084"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/usernameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:hint="User Name"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#f85084"
+                android:textColorHint="#f85084"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/emailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:hint="Email"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#f85084"
+                android:textColorHint="#f85084"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/passinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:hint="Password"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#f85084"
+                android:textColorHint="#f85084"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/geninfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:hint="Gender"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#f85084"
+                android:textColorHint="#f85084"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/hideinfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttom"
+                android:drawingCacheQuality="high"
+                android:text="Hide Info"
+                android:textAllCaps="false"
+
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:backgroundTint="#F85084" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</ScrollView>
